@@ -36,7 +36,7 @@ module.exports = {
     solidity: {
         compilers: [
             {
-                version: "0.8.8",
+                version: "0.8.7",
             },
             {
                 version: "0.6.6",
@@ -53,7 +53,7 @@ module.exports = {
         currency: "USD",
         outputFile: "gas-report.txt",
         noColors: true,
-        coinmarketcap: COINMARKETCAP_API_KEY,
+        // coinmarketcap: COINMARKETCAP_API_KEY,
     },
     namedAccounts: {
         deployer: {
