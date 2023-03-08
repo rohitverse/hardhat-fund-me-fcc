@@ -26,7 +26,7 @@ contract FunWithStorage {
 
     function doStuff() public {
         uint256 newVar = favoriteNumber + 1; // SLOAD
-        // bool otherVar = someBool; // SLOAD
+        bool otherVar = someBool; // SLOAD
         // ^^ memory variables
     }
 }

@@ -11,7 +11,7 @@ const { developmentChains } = require("../../helper-hardhat-config")
           const sendValue = ethers.utils.parseEther("1")
           beforeEach(async () => {
               // const accounts = await ethers.getSigners()
-              // deployer = accounts[0]
+            //   deployer = accounts[0]
               deployer = (await getNamedAccounts()).deployer
               await deployments.fixture(["all"])
               fundMe = await ethers.getContract("FundMe", deployer)
@@ -30,6 +30,7 @@ const { developmentChains } = require("../../helper-hardhat-config")
 
           describe("fund", function () {
               // https://ethereum-waffle.readthedocs.io/en/latest/matchers.html
+             
               // could also do assert.fail
               it("Fails if you don't send enough ETH", async () => {
                   await expect(fundMe.fund()).to.be.revertedWith(
